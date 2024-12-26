@@ -41,6 +41,7 @@ set(headers
     include/arba/stdx/algorithm/policy/range_policy.hpp
     include/arba/stdx/algorithm/quick_erase.hpp
     include/arba/stdx/algorithm/unstable_erase.hpp
+    include/arba/stdx/design_pattern/singleton.hpp
     include/arba/stdx/io/check_file.hpp
     include/arba/stdx/io/copy.hpp
     include/arba/stdx/io/open_file.hpp
