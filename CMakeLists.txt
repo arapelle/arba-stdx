@@ -38,6 +38,9 @@ configure_headers(configured_headers
 
 ## Headers:
 set(headers
+    include/arba/stdx/algorithm/policy/range_policy.hpp
+    include/arba/stdx/algorithm/quick_erase.hpp
+    include/arba/stdx/algorithm/unstable_erase.hpp
     include/arba/stdx/stdx.hpp
 )
 
@@ -66,10 +69,12 @@ add_cpp_library(${PROJECT_TARGET_NAME} ${${PROJECT_UPPER_VAR_NAME}_LIBRARY_TYPE}
 add_library("${PROJECT_NAMESPACE}::${PROJECT_BASE_NAME}${LIBRARY_TYPE_POSTFIX}" ALIAS ${PROJECT_TARGET_NAME})
 
 ## Link C++ targets:
-find_package(arba-vrsn 0.4 REQUIRED CONFIG)
+find_package(arba-vrsn 0.4.0 REQUIRED CONFIG)
+find_package(arba-meta 0.1.0 REQUIRED CONFIG)
 target_link_libraries(${PROJECT_TARGET_NAME}
     PUBLIC
         arba::vrsn
+        arba::meta
 )
 
 ## Add tests:

@@ -1,11 +1,16 @@
-#include <arba/stdx/stdx.hpp>
+#include <arba/stdx/algorithm/unstable_erase.hpp>
 #include <arba/stdx/version.hpp>
+#include <vector>
 #include <cstdlib>
 #include <iostream>
 
 int main()
 {
-    std::cout << stdx::libname() << std::endl;
-    std::cout << "EXAMPLE SUCCESS" << std::endl;
+    std::vector<int> vec = { 0, 1, 2, 3, 4, 5, 6, 7 };
+    const auto iter = vec.begin();
+    stdx::unstable_erase(vec, iter, stdx::not_last_element);
+    for (const auto& element : vec)
+        std::cout << element << ' '; // 7 1 2 3 4 5 6
+    std::cout << std::endl << "EXAMPLE SUCCESS" << std::endl;
     return EXIT_SUCCESS;
 }
