@@ -41,12 +41,16 @@ set(headers
     include/arba/stdx/algorithm/policy/range_policy.hpp
     include/arba/stdx/algorithm/quick_erase.hpp
     include/arba/stdx/algorithm/unstable_erase.hpp
-    include/arba/stdx/stdx.hpp
+    include/arba/stdx/io/check_file.hpp
+    include/arba/stdx/io/copy.hpp
+    include/arba/stdx/io/open_file.hpp
 )
 
 ## Sources:
 set(sources
-    src/arba/stdx/stdx.cpp
+    src/arba/stdx/io/check_file.cpp
+    src/arba/stdx/io/copy.cpp
+    src/arba/stdx/io/open_file.cpp
 )
 
 ## Add C++ library:
