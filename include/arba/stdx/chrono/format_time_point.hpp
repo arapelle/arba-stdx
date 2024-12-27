@@ -8,6 +8,15 @@ inline namespace arba
 namespace stdx
 {
 
+// "%H:%M:%S" -> "12:04:17"
+std::string format_HMS(std::chrono::system_clock::time_point time_point = std::chrono::system_clock::now());
+
+// "%H:%M:%S.ms" -> "12:04:17.256"
+std::string format_HMS_ms(std::chrono::system_clock::time_point time_point = std::chrono::system_clock::now());
+
+// "%H:%M:%S.mcs" -> "12:04:17.256652"
+std::string format_HMS_mcs(std::chrono::system_clock::time_point time_point = std::chrono::system_clock::now());
+
 // "%Y-%m-%d %H:%M:%S" -> "2023-10-25 12:04:17"
 std::string format_Ymd_HMS(std::chrono::system_clock::time_point time_point = std::chrono::system_clock::now());
 
