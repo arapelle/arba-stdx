@@ -44,6 +44,7 @@ set(headers
     include/arba/stdx/chrono/duration.hpp
     include/arba/stdx/chrono/format_time_point.hpp
     include/arba/stdx/chrono/stopwatch.hpp
+    include/arba/stdx/container/span.hpp
     include/arba/stdx/design_pattern/singleton.hpp
     include/arba/stdx/io/check_file.hpp
     include/arba/stdx/io/copy.hpp
@@ -54,6 +55,7 @@ set(headers
 set(sources
     src/arba/stdx/chrono/format_time_point.cpp
     src/arba/stdx/chrono/stopwatch.cpp
+    src/arba/stdx/container/span.cpp
     src/arba/stdx/io/check_file.cpp
     src/arba/stdx/io/copy.cpp
     src/arba/stdx/io/open_file.cpp

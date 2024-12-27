@@ -10,6 +10,7 @@ add_cpp_library_basic_tests(${PROJECT_TARGET_NAME} GTest::gtest_main
         algorithm/quick_erase_tests.cpp
         chrono/format_time_point_tests.cpp
         chrono/stopwatch_tests.cpp
+        container/span_tests.cpp
         design_pattern/singleton_tests.cpp
         io/check_file_tests.cpp
         io/copy_tests.cpp
