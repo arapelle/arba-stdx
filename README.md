@@ -7,7 +7,7 @@ A C++ library providing features extending the standard library.
 
 Binaries:
 
-- A C++20 compiler (ex: g++-13)
+- A C++20 compiler (ex: g++-14)
 - CMake 3.26 or later
 
 Testing Libraries (optional):
@@ -18,6 +18,18 @@ Testing Libraries (optional):
 
 ```
 git clone https://github.com/arapelle/arba-stdx
+```
+
+## Use with `conan`
+
+Create the conan package.
+```
+conan create . --build=missing -c
+```
+Add a requirement in your conanfile project file.
+```python
+    def requirements(self):
+        self.requires("arba-stdx/0.1.0")
 ```
 
 ## Quick Install ##
