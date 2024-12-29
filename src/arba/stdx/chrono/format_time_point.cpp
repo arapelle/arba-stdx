@@ -47,7 +47,7 @@ std::string format_time_point_mcs(std::string_view fmt_str, char sep, std::chron
     return stream.str();
 }
 
-}
+} // namespace private_
 
 namespace
 {
@@ -109,5 +109,5 @@ std::string format_Ymd_HMS_mcs_as_filename(std::chrono::system_clock::time_point
     return private_::format_time_point_mcs(filename_Ymd_HMS_fmt_str, '_', time_point);
 }
 
-}
-}
+} // namespace stdx
+} // namespace arba

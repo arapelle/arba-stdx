@@ -27,5 +27,5 @@ using days_f64 = std::chrono::duration<double, std::chrono::days::period>;
 using weeks_f64 = std::chrono::duration<double, std::chrono::weeks::period>;
 using years_f64 = std::chrono::duration<double, std::chrono::years::period>;
 
-}
-}
+} // namespace stdx
+} // namespace arba

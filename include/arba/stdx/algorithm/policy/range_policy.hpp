@@ -35,5 +35,5 @@ struct not_last_element_t
 };
 constexpr not_last_element_t not_last_element;
 
-}
-}
+} // namespace stdx
+} // namespace arba

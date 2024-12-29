@@ -10,4 +10,4 @@ namespace stdx
 void check_input_file(const std::filesystem::path& input_fpath);
 
 }
-}
+} // namespace arba

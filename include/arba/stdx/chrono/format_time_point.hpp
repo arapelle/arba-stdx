@@ -38,5 +38,5 @@ format_Ymd_HMS_ms_as_filename(std::chrono::system_clock::time_point time_point =
 std::string
 format_Ymd_HMS_mcs_as_filename(std::chrono::system_clock::time_point time_point = std::chrono::system_clock::now());
 
-}
-}
+} // namespace stdx
+} // namespace arba

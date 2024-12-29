@@ -97,5 +97,5 @@ as_writable_span(std::span<std::byte, Extent> bytes)
     return as_writable_span<Type>(bytes, std::nothrow);
 }
 
-}
-}
+} // namespace stdx
+} // namespace arba

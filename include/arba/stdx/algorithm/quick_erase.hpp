@@ -25,5 +25,5 @@ inline void quick_erase(range_type& range, std::ranges::iterator_t<range_type> i
     quick_erase(range, iter, any_element);
 }
 
-}
-}
+} // namespace stdx
+} // namespace arba

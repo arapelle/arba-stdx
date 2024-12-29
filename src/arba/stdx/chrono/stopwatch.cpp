@@ -38,5 +38,5 @@ stopwatch::duration stopwatch::restart()
     return current - previous;
 }
 
-}
-}
+} // namespace stdx
+} // namespace arba

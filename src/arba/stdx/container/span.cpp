@@ -16,5 +16,5 @@ span_size_error::span_size_error(const std::span<const std::byte>& bytes, std::s
 {
 }
 
-}
-}
+} // namespace stdx
+} // namespace arba

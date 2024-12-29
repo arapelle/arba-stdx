@@ -20,4 +20,4 @@ inline std::filesystem::path create_resource(std::string_view ut_dir_name)
 
     return story_fpath;
 }
-}
+} // namespace ut

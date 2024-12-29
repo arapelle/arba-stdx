@@ -41,5 +41,5 @@ void copy_file(const std::filesystem::path& input_fpath, std::ostream& output_st
     copy_stream(input_fstream, number_of_bytes, output_stream);
 }
 
-}
-}
+} // namespace stdx
+} // namespace arba

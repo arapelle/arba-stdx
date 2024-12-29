@@ -18,5 +18,5 @@ void check_input_file(const std::filesystem::path& input_fpath)
     }
 }
 
-}
-}
+} // namespace stdx
+} // namespace arba

@@ -45,5 +45,5 @@ private:
     time_point current_;
 };
 
-}
-}
+} // namespace stdx
+} // namespace arba

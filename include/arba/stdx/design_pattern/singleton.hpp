@@ -23,5 +23,5 @@ private:
     friend Type;
 };
 
-}
-}
+} // namespace stdx
+} // namespace arba

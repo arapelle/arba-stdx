@@ -22,5 +22,5 @@ std::ifstream& open_input_file(std::ifstream& input_fstream, const std::filesyst
     return std::ifstream(std::move(ifs));
 }
 
-}
-}
+} // namespace stdx
+} // namespace arba

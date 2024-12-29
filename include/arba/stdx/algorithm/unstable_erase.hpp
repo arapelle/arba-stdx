@@ -42,5 +42,5 @@ inline void unstable_erase(range_type& range, std::ranges::iterator_t<range_type
     range.pop_back();
 }
 
-}
-}
+} // namespace stdx
+} // namespace arba
