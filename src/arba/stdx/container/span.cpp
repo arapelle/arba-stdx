@@ -1,4 +1,5 @@
 #include <arba/stdx/container/span.hpp>
+
 #include <format>
 
 inline namespace arba

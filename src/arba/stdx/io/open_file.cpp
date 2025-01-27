@@ -1,5 +1,6 @@
 #include <arba/stdx/io/check_file.hpp>
 #include <arba/stdx/io/open_file.hpp>
+
 #include <fstream>
 
 inline namespace arba

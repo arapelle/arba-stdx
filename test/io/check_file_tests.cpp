@@ -1,9 +1,10 @@
 #include "create_resource.hpp"
-
 #include <arba/stdx/io/check_file.hpp>
+
+#include <gtest/gtest.h>
+
 #include <format>
 #include <fstream>
-#include <gtest/gtest.h>
 
 std::filesystem::path create_resource()
 {

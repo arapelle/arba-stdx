@@ -1,5 +1,7 @@
 #include <arba/stdx/algorithm/quick_erase.hpp>
+
 #include <gtest/gtest.h>
+
 #include <list>
 
 TEST(quick_erase_tests, quick_erase__any_element__last_int__ok)

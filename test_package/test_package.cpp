@@ -1,5 +1,6 @@
 #include <arba/stdx/algorithm/unstable_erase.hpp>
 #include <arba/stdx/version.hpp>
+
 #include <cstdlib>
 #include <iostream>
 #include <vector>
