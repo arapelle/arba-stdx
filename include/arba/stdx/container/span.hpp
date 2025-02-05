@@ -1,6 +1,7 @@
 #pragma once
 
 #include <arba/meta/policy/exception_policy.hpp>
+
 #include <span>
 #include <system_error>
 

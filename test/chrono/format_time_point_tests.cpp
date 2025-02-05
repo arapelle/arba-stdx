@@ -1,7 +1,9 @@
 #include <arba/stdx/chrono/format_time_point.hpp>
+
+#include <gtest/gtest.h>
+
 #include <cstdlib>
 #include <format>
-#include <gtest/gtest.h>
 
 std::chrono::system_clock::time_point make_time_point(std::string_view date_str, unsigned ms = 0, unsigned mcs = 0)
 {

@@ -1,4 +1,5 @@
 #include <arba/stdx/design_pattern/singleton.hpp>
+
 #include <gtest/gtest.h>
 
 class global_tool : public stdx::singleton<global_tool>
