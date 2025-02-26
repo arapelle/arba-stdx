@@ -1,8 +1,9 @@
 #include "create_resource.hpp"
-
 #include <arba/stdx/io/copy.hpp>
-#include <fstream>
+
 #include <gtest/gtest.h>
+
+#include <fstream>
 #include <sstream>
 
 std::filesystem::path create_resource()

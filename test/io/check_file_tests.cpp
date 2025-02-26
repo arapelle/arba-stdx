@@ -1,9 +1,10 @@
 #include "create_resource.hpp"
-
 #include <arba/stdx/io/check_file.hpp>
+
+#include <gtest/gtest.h>
+
 #include <format>
 #include <fstream>
-#include <gtest/gtest.h>
 
 std::filesystem::path create_resource()
 {
@@ -30,7 +31,8 @@ TEST(check_file_tests, check_input_file__symlink_to_existing_file__ok)
     try
     {
         std::filesystem::path rsc_slpath = rsc_file.parent_path() / "check_file.txt";
-        std::filesystem::create_symlink(rsc_file, rsc_slpath);
+        if (!std::filesystem::exists(rsc_slpath))
+            std::filesystem::create_symlink(rsc_file, rsc_slpath);
         stdx::check_input_file(rsc_slpath);
         SUCCEED();
     }

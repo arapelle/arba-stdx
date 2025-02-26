@@ -1,4 +1,5 @@
 #include <arba/stdx/algorithm/unstable_erase.hpp>
+
 #include <gtest/gtest.h>
 
 TEST(unstable_erase_tests, unstable_erase__any_element__not_last_string__ok)

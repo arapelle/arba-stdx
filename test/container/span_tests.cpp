@@ -1,6 +1,8 @@
 #include <arba/stdx/container/span.hpp>
-#include <array>
+
 #include <gtest/gtest.h>
+
+#include <array>
 
 struct tri_char
 {

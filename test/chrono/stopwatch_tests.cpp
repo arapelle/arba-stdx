@@ -1,7 +1,9 @@
 #include <arba/stdx/chrono/stopwatch.hpp>
+
+#include <gtest/gtest.h>
+
 #include <cstdlib>
 #include <format>
-#include <gtest/gtest.h>
 
 const std::chrono::milliseconds default_sleep_duration(100);
 const std::chrono::milliseconds lower_threshold_duration(1);
